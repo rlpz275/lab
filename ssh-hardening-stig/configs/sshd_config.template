@@ -1,0 +1,38 @@
+# STIG-Compliant SSH Configuration Template
+# Last Updated: November 2024
+# Compliance: DISA RHEL 10 STIG V1R14
+
+# Network Settings
+Port 22
+#ListenAddress <YOUR_INTERNAL_IP>
+
+# Authentication - STIG V-230288, V-230380
+PermitRootLogin no
+PubkeyAuthentication yes
+PasswordAuthentication no
+PermitEmptyPasswords no
+MaxAuthTries 3
+
+# Protocol Settings - STIG V-230244
+Protocol 2  # Note: Implicit in OpenSSH 7.4+
+
+# Security Settings - STIG V-230296, V-230297
+HostbasedAuthentication no
+IgnoreRhosts yes
+StrictModes yes
+
+# Encryption - FIPS 140-2 Compliant
+Ciphers aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr
+MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512,hmac-sha2-256
+
+# Session Management - STIG V-230280
+ClientAliveInterval 600  # 10 minutes
+ClientAliveCountMax 0
+MaxSessions 10
+
+# Logging - STIG V-230301
+LogLevel VERBOSE
+SyslogFacility AUTH
+
+# Banner - STIG V-230226
+Banner /etc/ssh/sshd_banner

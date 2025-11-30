@@ -1,0 +1,41 @@
+# SSH Keys - NEVER commit these
+*.pem
+*.key
+id_rsa*
+id_ecdsa*
+id_ed25519*
+known_hosts
+authorized_keys
+*.pub
+
+# Personal configs
+.ssh/
+ssh_config
+
+# IP Addresses / Personal Info
+*_local.conf
+*.local
+local_settings.sh
+my_network.txt
+
+# Sensitive logs
+*.log
+/var/log/
+audit/
+secure
+
+# Backup files
+*.backup
+*.bak
+*~
+*.swp
+*.orig
+
+# Environment files
+.env
+.env.*
+config.local
+
+# Personal notes
+private/
+personal_notes/
