@@ -100,7 +100,7 @@ vim /tmp/sshd_config.review
 ## Author
 
 Raul Lopez
-- LinkedIn: (https://www.linkedin.com/in/raullopez01/)
+- LinkedIn: https://www.linkedin.com/in/raullopez01/
 - Focus: DevSecOps, Cloud Security, Infrastructure Automation
 
 ## License
