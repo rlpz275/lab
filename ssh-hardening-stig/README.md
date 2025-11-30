@@ -99,8 +99,8 @@ vim /tmp/sshd_config.review
 
 ## Author
 
-**Your Name**
-- LinkedIn: [yourprofile](https://linkedin.com/in/yourprofile)
+Raul Lopez
+- LinkedIn: (https://www.linkedin.com/in/raullopez01/)
 - Focus: DevSecOps, Cloud Security, Infrastructure Automation
 
 ## License
